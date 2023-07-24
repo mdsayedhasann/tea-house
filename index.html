@@ -16,39 +16,86 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- FONT AWESONE -->
+    <script
+      src="https://kit.fontawesome.com/6f815983a3.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .font-manrope{
-            font-family: 'Manrope', sans-serif;
-        }
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
-      <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
 
   <body class="font-manrope">
-    <header>
-        <section><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequuntur ducimus qui, laudantium deserunt aliquam iste, blanditiis cum consectetur illum ab voluptas nostrum asperiores illo consequatur autem sunt, ipsa debitis?</h1></section>
+    <header class="max-w-screen-xl mx-auto px-1 md:px-12 lg:px-14">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row py-16">
+          <div class="w-full md:w-7/12">
+            <h1 class="text-3xl md:text-7xl font-extrabold leading-8">
+              It's good <br />
+              tea time at <br />
+              The Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum <br />
+              Satisfaction To Your Taste Buds.
+            </p>
+            <button
+              class="btn bg-gradient-to-r from-[#ff8938] to-[#ff0000] text-white"
+            >
+              Explore More
+            </button>
+          </div>
+          <div class="w-full md:w-5/12">
+          <img class="z-10" src="./images/banner.png"  />
+          
+          <div class="flex bg-white -mt-11 p-5 gap-4 items-center z-100 drop-shadow w-64 rounded-lg
+          ">
+            <i class="fa-solid fa-star text-3xl text-[#FFC850]"></i>
+            <div>
+              <h3 class="text-3xl">5.00</h3>
+              <p>Trust Pilot Ratings</p>
+            </div>
+          </div>
+          </div>
+
+          
+
+        </div>
+        
+      </div>
     </header>
 
     <main>
+        <section class="max-w-7xl mx-auto py-8">
+            <div class="section-heading">
+                <h3 class="text-[#1C1C1C] text-center text-5xl	font-bold py-3	">
+                    Our Featured Products
+                </h3>
+                <p class="text-center text-[#777] py-3">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable. 
+                </p>
+            </div>
 
+        </section>
     </main>
 
-    <footer>
-
-    </footer>
-
-
+    <footer></footer>
   </body>
 </html>
